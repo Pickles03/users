@@ -39,8 +39,7 @@ ul {
   box-shadow: #53493e 3px 3px 5px;
   border-radius: 8px;
   padding: 1rem;
-  max-width: 430px;
-  min-width: 430px;
+  width: 450px;
   gap: 20px;
 }
 .card-img {

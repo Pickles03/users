@@ -16,7 +16,7 @@ function createUserCard(user, imageNum) {
         <img src="${imageUrl}" class="card-img" alt="Random User Image">
         <div class="card-body-main">
             <h3 class="card-title">Name: ${user.name}</h3>
-            <p class="card-text"><b>Age: </b>${Math.floor(Math.random()* 21) + 30}</p>
+            <p class="card-text"><b>Age: </b>${Math.floor(Math.random()* 20) + 20}</p> 
             <p class="card-text"><b>Username:</b> ${user.username}</p>
             <p class="card-text"><b>Email:</b> ${user.email}</p>
             <p class="card-text"><b>Number:</b> ${user.phone}</p>
@@ -27,7 +27,7 @@ function createUserCard(user, imageNum) {
             <p class="card-text"><b>Address:</b> ${user.address.street}</p>
             <p class="card-text"><b>Suite:</b> ${user.address.suite}</p>
         </div>
-    `;
+    `; //the math.random() is just to generate a random age for the user and the weay to get a random value between 30 and 50 is to multiply the random value by 21 and add 30 since first you have to subtract the minimum value from the maximum value and then add the minimum value to get the random value between the two values. It is 21 and not 20 because the random value is between 0 and 1 and not 1 and 2.
   
     usuarios.appendChild(card);
   }
@@ -51,3 +51,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
     console.error('Fetch error:', error);
     }
   );
+
+  /* in class solution
+
+  
