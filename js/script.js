@@ -16,6 +16,7 @@ function createUserCard(user, imageNum) {
         <img src="${imageUrl}" class="card-img" alt="Random User Image">
         <div class="card-body-main">
             <h3 class="card-title">Name: ${user.name}</h3>
+            <p class="card-text"><b>Age: </b>${Math.floor(Math.random()* 21) + 30}</p>
             <p class="card-text"><b>Username:</b> ${user.username}</p>
             <p class="card-text"><b>Email:</b> ${user.email}</p>
             <p class="card-text"><b>Number:</b> ${user.phone}</p>
