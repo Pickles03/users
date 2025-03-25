@@ -34,8 +34,8 @@ ul {
   border: 1px solid #ccc; 
   border-radius: 8px;
   padding: 1rem;
-  max-width: 600px;
-  min-width: none;
+  max-width: 400px;
+  min-width: 400px;
   gap: 20px;
 }
 .card-img {
